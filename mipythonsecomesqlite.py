@@ -11,15 +11,15 @@ red = (213, 50, 80)
 green = (0, 255, 0)
 blue = (50, 153, 213)
 
-dis_width = 1200
-dis_height = 800
+dis_width = 600
+dis_height = 400
 
 dis = pygame.display.set_mode((dis_width, dis_height))
 pygame.display.set_caption('My Python se come SQLite')
 
 clock = pygame.time.Clock()
 
-snake_block = 40
+snake_block = 20
 snake_speed = 5
 
 font_style = pygame.font.SysFont("bahnschrift", 25)
@@ -159,7 +159,7 @@ def gameLoop(starting):
 
         our_snake(snake_block, snake_list)
         Your_score(length_of_snake - 1)
-        debug(str(snake_speed), 50)
+        # debug(str(snake_speed), 50)  # FIXME: Uncomment to ser a debug in screen.
         pygame.display.update()
 
         if int(x1) == food_x and int(y1) == food_y:
