@@ -1,3 +1,3 @@
 # MiPythonSeComeSQLite
-Juego Snake hecho con pygames
-Ejecutar play.py para jugar.
+Juego Snake hecho con pygames.
+## Ejecutar play.py para jugar.
